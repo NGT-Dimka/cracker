@@ -1,10 +1,6 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
+from __future__ import unicode_literals # импорт юникода
 
-from django.contrib import admin
+from django.contrib import admin # импорт библиотеки админа
+from blog.models import Post # импорт модели пост из списка моделей блога
 
-# Register your models here.
-from django.contrib import admin
-from blog.models import Post
-
-admin.site.register(Post)
+admin.site.register(Post) # предоставление прав только единственному пользователю админу

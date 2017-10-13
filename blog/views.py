@@ -7,8 +7,8 @@ from django.shortcuts import render
 from blog.models import Post
 from django.views.generic import ListView, DetailView
 
-class PostsListView(ListView):
+class PostsListView(ListView): # модель отображения списка постов
     model = Post
 
-class PostDetailView(DetailView):
+class PostDetailView(DetailView): # модель детального отображения поста
     model = Post
